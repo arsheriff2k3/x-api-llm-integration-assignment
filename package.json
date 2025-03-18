@@ -1,0 +1,47 @@
+{
+  "name": "x-api-integration",
+  "version": "1.0.0",
+  "description": "Integration of LLM to summarize Instagram captions into tweets and post to X.com",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "x.com",
+    "twitter",
+    "instagram",
+    "llm",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.0.0",
+    "passport": "^0.7.0",
+    "passport-twitter": "^1.0.4",
+    "session": "^0.1.0",
+    "twitter-api-v2": "^1.20.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.18.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.8.10",
+    "@types/passport": "^1.0.17",
+    "@types/passport-twitter": "^1.0.40",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.6",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  }
+}
